@@ -28,8 +28,9 @@ public class Longestprifix {
     }
     public static String longprifix(String str[],int l,int r){
         //int l=0,r=str.length-1;
-      
-       if(l<=r){
+      if(l==r)
+          return str[l];
+       if(l<r){
           
            int mid=l+(r-l)/2;
            String s1=longprifix(str, l, mid);
